@@ -7,7 +7,11 @@ export default class NewsItem extends Component {
       <div>
         <div className="card my-3" style={{ width: "18rem" }}>
           <img
-            src={imageUrl}
+            src={
+              !imageUrl
+                ? "https://cdn.pixabay.com/photo/2015/02/15/09/33/news-636978_960_720.jpg"
+                : imageUrl
+            }
             className="card-img-top"
             alt="..."
             style={{ height: "10rem" }}
